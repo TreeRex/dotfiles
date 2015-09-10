@@ -1,0 +1,19 @@
+[user]
+	name = Tom Emerson
+	email = temerson@ebsco.com
+[core]
+	editor = emacs
+	excludesfile = /Users/temerson/.gitignore_global
+[credential]
+	helper = osxkeychain
+[push]
+	default = simple
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
