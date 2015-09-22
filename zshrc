@@ -23,3 +23,7 @@ alias lsl="ls -lh"
 alias hexdump="od -Ax -tx1"
 alias mroe="less"
 alias df="df -h"
+
+# don't need emacsclient when running on MacOS X if
+# the Cocoa build of Emacs is available
+alias emacs="open -a Emacs"
